@@ -1,6 +1,6 @@
 // TODO: Include packages needed for this application
 
-const generateMyReadMe = require ("./Develop/utils/generateMarkdown");
+const generateMyReadMe = require ("./utils/generateMarkdown");
 const fs = require('fs');
 const inquirer = require('inquirer');
 
@@ -47,7 +47,7 @@ const questions = [{
 {
     type: 'input',
     name: 'usage',
-    message: 'Enter the ussage information: (REQUIRED)',
+    message: 'Enter the usage information: (REQUIRED)',
     validate: usageInput => {
         if(usageInput) {
             return true;
@@ -135,8 +135,19 @@ const promptUser = () => {
 }
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, (err) => err ? console.log(err) : console.log('Successfully created README!'))
+function writeToFile(data) {
+   return new Promise((resolve, reject) => {
+    fs.writeFile('./utlis/README.md', data, err => {
+        if(err) {
+            reject(err);
+            return;
+        }
+        resolve({
+            ok: true, 
+            message:'Successfully creates README!'
+        })
+    })
+   })
 }
 
 
