@@ -41,9 +41,12 @@ const checkLicense = licenseChoice => {
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+
   ${addABadge(data.license)}
+
   ## Description
   ${data.description}
+  
   ## Table of Content
   * [Description](#description)
   * [Installation](#installation)
@@ -53,20 +56,29 @@ function generateMarkdown(data) {
   * [Issue](#issue)
   * [Test](#test)
   * [Questions](#questions)
+  
   ## Installation
   ${data.installation}
+
   ## Usage
   ${data.usage}
+
   ## License
   ${checkLicense(data.license)}
+
   ## Contribution
   ${data.contribution}
+
   ## Issue
   ${data.issue}
+
   ## Test
   ${data.test}
+
   ## Questions 
   [Github Profile] (https://github.com/${data.userName}/)
+
+  I can be reach at${data.email} for any additional questions and/or concerns.
 
 `;
 }
