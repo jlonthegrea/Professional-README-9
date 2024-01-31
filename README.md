@@ -30,4 +30,4 @@ THEN I am taken to the corresponding section of the README
 
 ### Screenshot
 
-### Deployment 
+![Alt text](<Screen Shot 2024-01-31 at 5.03.46 PM.png>)
