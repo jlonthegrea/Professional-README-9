@@ -1,19 +1,19 @@
 const addABadge = licenseChoice => {
   if (licenseChoice == 'MIT License') {
     return`
-    
+    [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
     `;
   } else if (licenseChoice == 'GNU GPLv3') {
     return `
-
+    [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)]
     `;
   } else if (licenseChoice == 'Apache License') {
     return`
-    
+    [![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)]
     `;
 } else {
   return `
-  
+  [![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)]
   `;
 }
 }
