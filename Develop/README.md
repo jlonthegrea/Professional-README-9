@@ -40,5 +40,5 @@
   ## Questions 
   [Github Profile] (https://github.com/jlonthegrea/)
 
-  I can be reach atallen_jaylon@yahoo.com for any additional questions and/or concerns.
+  I can be reach allen_jaylon@yahoo.com for any additional questions and/or concerns.
 
